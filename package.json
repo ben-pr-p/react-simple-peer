@@ -1,0 +1,24 @@
+{
+  "name": "react-simple-peer",
+  "version": "0.0.1",
+  "description": "Wraps `simple-peer` in a React component for declarative WebRTC",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ben-pr-p/react-simple-peer.git"
+  },
+  "keywords": [
+    "react",
+    "webrtc",
+    "simple-peer"
+  ],
+  "author": "Ben Packer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ben-pr-p/react-simple-peer/issues"
+  },
+  "homepage": "https://github.com/ben-pr-p/react-simple-peer#readme"
+}
