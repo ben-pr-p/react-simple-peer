@@ -31,13 +31,16 @@ export default class MyApp extends Component {
       <div>
         <SimplePeer
           ref={peer => this.refs.peer = peer} // peer will have .send and .signal
-          initiator={true}           // who should answer the call
-          stream={stream}            // something that comes from getUserMedia
-          onSignal={this.onSignal}   // called back with signaling data - needs to somehow get the data to another peer
-          onData={this.onData}       // called back with data another peer sent
-          onConnect={this.onConnect} // ready to use `peer.send`
-          onStream={this.onStream}   // called back with a remote stream from a peer
-          onError={this.handleError}
+          initiator={true}                    // who should answer the call
+          stream={stream}                     // something that comes from getUserMedia
+          onSignal={this.onSignal}            // called back with signaling data - needs to somehow get the data to another peer
+          onData={this.onData}                // called back with data another peer sent
+          onConnect={this.onConnect}          // ready to use `peer.send`
+          onStream={this.onStream}            // called back with a remote stream from a peer
+                                                // set it as the srcObject of a video element
+          onError={this.handleError}          // called back with errors from `simple-peer`
+          verbose={true}                      // will log various stages an options (or not)
+        />
       </div>
     )
   }
